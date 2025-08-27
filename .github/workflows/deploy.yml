@@ -17,7 +17,6 @@ jobs:
         with: { node-version: 20 }
       - run: npm ci
       - run: npm run build
-      - run: npm run export
       - name: Add CNAME
         run: echo "www.jinhongmoon.com" > out/CNAME
       - uses: actions/upload-pages-artifact@v3
